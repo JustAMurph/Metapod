@@ -19,7 +19,7 @@ class FileLogger implements Logger {
 		}
 
 		if(!$this->fh){
-			$this->fh = fopen(, 'a+');
+			$this->fh = fopen($this->logFileName, 'a+');
 		}
 
 		return $this->fh;
