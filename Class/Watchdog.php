@@ -47,11 +47,11 @@ class WatchDog {
 
 
     public function watchLogin(){
-        add_action ('wp_authenticate' , array($this, 'adminLoggedIn'));
+        add_action ('wp_login_success' , array($this, 'adminLoggedIn'));
     }
 
     public function adminLoggedIn($username){
-        global $wpdb;
+
 
         if (!username_exists($username)) {
             return;
