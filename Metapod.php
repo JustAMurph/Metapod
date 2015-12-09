@@ -16,7 +16,7 @@ require('Class/Metapod.php');
 require('Class/HtaccessProtect.php');
 
 require('Lib/Install.php');
-require('Lib/Pluggable.php');
+//require('Lib/Pluggable.php');
 
 define('METAPOD_DIRECTORY', plugin_dir_path( __FILE__ ));
 define('DS', DIRECTORY_SEPARATOR);
